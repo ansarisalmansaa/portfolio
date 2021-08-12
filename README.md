@@ -80,35 +80,15 @@
 
 #### Component Tree
 
-<img width="790" alt="Screen Shot 2021-08-12 at 10 32 20 AM" src="https://user-images.githubusercontent.com/84696994/129215724-3479bc82-1ee8-4a8a-8153-608e9d4c9059.png">
+<img width="432" alt="Screen Shot 2021-08-12 at 11 46 27 AM" src="https://user-images.githubusercontent.com/84696994/129227600-e38f66dd-dc88-42f3-a685-6c0293e60cb2.png">
 
 
 ``` structure
 
-src
-└── src
+─ src
     ├── App.css
     ├── App.js
     ├── App.test.js
-    ├── Components
-    │   ├── Login.jsx
-    │   └── Message.jsx
-    ├── Layout
-    │   ├── Footer.jsx
-    │   └── Navbar.jsx
-    ├── Screens
-    │   ├── About.jsx
-    │   ├── AddProject.jsx
-    │   ├── Contact.jsx
-    │   ├── DetailProject.jsx
-    │   ├── EditProject.jsx
-    │   ├── Home.jsx
-    │   └── Projects.jsx
-    ├── Services
-    │   ├── api-config.jsx
-    │   ├── auth.jsx
-    │   ├── projects.jsx
-    │   └── user.jsx
     ├── index.css
     ├── index.js
     ├── logo.svg
@@ -134,7 +114,7 @@ src
 
 #### ERD Model
 
-<img width="718" alt="Screen Shot 2021-08-12 at 10 41 36 AM" src="https://user-images.githubusercontent.com/84696994/129216917-6afdf2d8-b4d9-499e-bdbc-39c3d0092d92.png">
+<img width="739" alt="Screen Shot 2021-08-12 at 11 47 55 AM" src="https://user-images.githubusercontent.com/84696994/129227771-160551ee-4e1b-4105-afa7-8e169bbea543.png">
 
 ## Code Showcase
 
