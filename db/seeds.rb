@@ -9,7 +9,7 @@ User.destroy_all
 Project.destroy_all
 Contact.destroy_all
 
-user=User.create(username:"salman8466", password_digest:"salman123")
+user=User.create(username:"salman8466", password:"salman123")
 pp "#{User.count} users created"
 spf_app = Project.create!(user_id: user[:id], project_name:"SPF APP", description:"Ecommerce Website for Sunscreens with full CRUD functionality and Authentication.", image_url:"https://i.ibb.co/VqdCYyq/Screen-Shot-2021-08-11-at-11-34-05-AM.png", github_url:"https://github.com/ansarisalmansaa/SPF", deploy_url:"https://spf-sth.netlify.app/")
 duework_app = Project.create!(user_id: user[:id], project_name: "DUEWORK APP", description:"This Project will allow user to add and delete new due Projects with subject name, title description and due date.", image_url: "https://i.ibb.co/2hYkMdv/Screen-Shot-2021-08-11-at-11-33-40-AM.png", github_url: "https://github.com/ansarisalmansaa/duework", deploy_url: "https://duework.netlify.app/")
