@@ -9,6 +9,7 @@ import Login from "./screens/Login/Login";
 import Projects from "./screens/Projects/Projects";
 import Home from "./screens/Home/Home";
 import About from "./screens/AboutMe/About";
+import Message from "./screens/Message/Message"
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -40,6 +41,9 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <Home />
+      </Route>
+      <Route exact path="/message">
+      <Message/>
       </Route>
       <Route exact path="/projects">
         <Projects />
