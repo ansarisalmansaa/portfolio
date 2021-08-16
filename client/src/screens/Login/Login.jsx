@@ -1,12 +1,15 @@
+import Layout from "../Layout/layout";
+
 export default function Login({ handleLogin, loginForm, setLoginForm }) {
-    const handleChange = (e) => {
-      const { name, value } = e.target;
-      setLoginForm((prevFormData) => ({
-        ...prevFormData,
-        [name]: value,
-      }));
-    };
-    return (
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setLoginForm((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+  return (
+    <Layout>
       <div className="login">
         <h1 className="login-title">Login</h1>
         <form className="login-form" onSubmit={(e) => handleLogin(e)}>
@@ -31,14 +34,9 @@ export default function Login({ handleLogin, loginForm, setLoginForm }) {
           <button type="submit">Submit</button>
         </form>
       </div>
-    );
-  }
-
-
-
-
-
-
+    </Layout>
+  );
+}
 
 // import { useState } from "react";
 // import { login } from "../../services/user";
@@ -85,4 +83,3 @@ export default function Login({ handleLogin, loginForm, setLoginForm }) {
 //   </div>
 // );
 // }
-
