@@ -1,1 +1,17 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap");
+nav{
+    font-weight: bolder;
+    width: 100%;
+}
+#nav-links {
+  align-items: center;
+}
+#nav-links a {
+  margin: 2%;
+}
+#logo {
+  color: white;
+  font-family: "Ribeye Marrow", cursive;
+  font-size: 25px;
+  padding-bottom: 20px;
+}

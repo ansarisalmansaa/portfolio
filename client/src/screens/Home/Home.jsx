@@ -1,4 +1,5 @@
 import Layout from "../Layout/Layout";
+import "./home.css"
 function Home() {
   return (
     <Layout>

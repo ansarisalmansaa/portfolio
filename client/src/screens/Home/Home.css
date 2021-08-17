@@ -1,0 +1,9 @@
+.welcome-container{
+    min-width:100vw ;
+    min-height: 75vh;
+   margin-top: 10%;
+}
+.welcome-container a{
+    border: solid #19C7ED;
+    border-radius: 5px;
+}

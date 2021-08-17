@@ -23,31 +23,33 @@ function Navbar() {
   };
   return (
     <div>
-      <div>SA</div>
-      <div>
-        {userExist ? (
-          <>
-            {" "}
-            <a href="/message">Message</a>
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <Link to="/" onClick={handleLogout}>
-              Logout
-            </Link>
-          </>
-        ) : (
-          <>
-            {" "}
-            <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About</a>
-            <a href="/contact">Contact</a>
-            <a href="/login">Login</a>{" "}
-          </>
-        )}
-      </div>
+      <nav>
+        <div id="logo">SA</div>
+        <div id="nav-links">
+          {userExist ? (
+            <>
+              {" "}
+              <a href="/message">Message</a>
+              <a href="/">Home</a>
+              <a href="/projects">Projects</a>
+              <a href="/about">About</a>
+              <a href="/contact">Contact</a>
+              <Link to="/" onClick={handleLogout}>
+                Logout
+              </Link>
+            </>
+          ) : (
+            <>
+              {" "}
+              <a href="/">Home</a>
+              <a href="/projects">Projects</a>
+              <a href="/about">About</a>
+              <a href="/contact">Contact</a>
+              <a href="/login">Login</a>{" "}
+            </>
+          )}
+        </div>
+      </nav>
       <hr />
     </div>
   );
