@@ -11,7 +11,8 @@ export const getOneMessage = async (id) => {
 };
 
 export const deleteMessage = async (id) => {
-  await api.delete(`/contact/${id}`);
+ const res =  await api.delete(`/contact/${id}`);
+ return res.data;
 };
 
 export const createMessage = async (contactData) => {

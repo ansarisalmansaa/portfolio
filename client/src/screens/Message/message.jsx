@@ -1,6 +1,11 @@
-import { getAllMessages, getOneMessage } from "../../services/contact";
+import {
+  deleteMessage,
+  getAllMessages,
+  getOneMessage,
+} from "../../services/contact";
 import { useState, useEffect } from "react";
 import Layout from "../Layout/layout";
+
 function Message(user) {
   const [contacts, setContacts] = useState([]);
   useEffect(() => {
@@ -10,7 +15,14 @@ function Message(user) {
     };
     fetchMessages();
   }, []);
-
+  const handleDelete = async (id) => {
+    const deleteM = await deleteMessage(id);
+    if (deleteM == "Deleted") {
+      setContacts((prevContacts) => {
+        return prevContacts.filter((contact) => contact.id !== id);
+      });
+    }
+  };
   return (
     <Layout>
       <div className="messages">
@@ -20,6 +32,7 @@ function Message(user) {
             <div>{contact.name}</div>
             <div>{contact.email}</div>
             <div>{contact.message}</div>
+            <button onClick={() => handleDelete(contact.id)}>Delete</button>
           </div>
         ))}
       </div>

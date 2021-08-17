@@ -3,13 +3,16 @@ import Layout from "./screens/Layout/layout";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Route, useHistory } from "react-router";
-import { login, logout } from "./services/user";
+import { login } from "./services/user";
 import { verify } from "./services/user";
 import Login from "./screens/Login/Login";
 import Projects from "./screens/Projects/Projects";
 import Home from "./screens/Home/Home";
 import About from "./screens/AboutMe/About";
-import Message from "./screens/Message/Message"
+import Message from "./screens/Message/Message";
+import Contact from "./screens/Contact/Contact";
+import AddProject from "./screens/AddProject/AddProject";
+import Detail from "./screens/DetailProject/Detail";
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -32,18 +35,14 @@ function App() {
     reverify();
   }, []);
 
-  const handleLogout = () => {
-    logout();
-    setUser(null);
-    history.push("/");
-  };
+  
   return (
     <div className="App">
       <Route exact path="/">
         <Home />
       </Route>
       <Route exact path="/message">
-      <Message/>
+        <Message />
       </Route>
       <Route exact path="/projects">
         <Projects />
@@ -57,6 +56,15 @@ function App() {
       </Route>
       <Route exact path="/about">
         <About />
+      </Route>
+      <Route path="/contact">
+        <Contact/>
+      </Route>
+      <Route exact path="/add-project">
+        <AddProject user = {user} setUser={setUser}/>
+      </Route>
+      <Route exact path="/detail">
+        <Detail />
       </Route>
     </div>
   );

@@ -13,13 +13,14 @@ function Projects({ user }) {
   }, []);
   return (
     <Layout>
+      <a href="/add-project">Add Project</a>
       <div className="projects-container">
         <h1>My Projects</h1>
         {projects.map((project) => (
           <div className="project-id" key={project.id}>
-            <div>{project.project_name}</div>
+            <div><h1>{project.project_name}</h1></div>
             <div className="project-img-container">
-              <img className="project-img" src={project.image_url} />
+              <img className="project-img" src={project.image_url} alt={project.name}/>
             </div>
             <div>
               <a href={project.github_url}>View Code</a>
@@ -27,7 +28,8 @@ function Projects({ user }) {
             <div>
               <a href={project.deploy_url}>View Website</a>
             </div>
-          </div>
+            <a href="/detail">Detail</a>
+        </div>
         ))}
       </div>
     </Layout>

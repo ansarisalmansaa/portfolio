@@ -5,11 +5,15 @@ import Route from "react-router-dom";
 import About from "../../AboutMe/About";
 import { useState, useEffect } from "react";
 import { verify } from "../../../services/user";
+import { logout } from "../../../services/user";
+import Contact from "../../Contact/Contact";
+import { useHistory } from "react-router-dom";
 
 function Navbar() {
   
     const [userExist, setUserExist] = useState(null)
-
+    const [user, setUser] = useState(null);
+    const history = useHistory();
     useEffect(()=>{
         const checkSign = async()=>{
             const valid = await verify()
@@ -17,6 +21,11 @@ function Navbar() {
         }
         checkSign()
     },[])
+    const handleLogout = () => {
+      logout();
+      setUser(null);
+      history.push("/");
+    };
   return (
     <div>
       <div>SA</div>
@@ -25,12 +34,12 @@ function Navbar() {
         <a href="/">Home</a>
         <a href="/projects">Projects</a>
         <a href="/about">About</a>
-        <a href="">Contact</a>
-         <Link to="/logout">Logout</Link></>)
+        <a href="/contact">Contact</a>
+         <Link to="/" onClick={handleLogout}>Logout</Link></>)
         : <> <a href="/">Home</a>
         <a href="/projects">Projects</a>
         <a href="/about">About</a>
-        <a href="">Contact</a>
+        <a href="/contact">Contact</a>
         <a href="/login">Login</a> </>}
       </div>
       <hr />
