@@ -8,7 +8,7 @@ import Login from "./screens/Login/Login";
 import Projects from "./screens/Projects/Projects";
 import Home from "./screens/Home/Home";
 import About from "./screens/AboutMe/About";
-import Message from "./screens/Message/Message";
+import Message from "./screens/Message/message";
 import Contact from "./screens/Contact/Contact";
 import AddProject from "./screens/AddProject/AddProject";
 import Detail from "./screens/DetailProject/Detail";
