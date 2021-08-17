@@ -1,17 +1,15 @@
 import Layout from "../Layout/layout";
 import { useState } from "react";
-import { createMessage, deleteMessage } from "../../services/contact";
+import { createMessage } from "../../services/contact";
 import { useHistory } from "react-router-dom";
-import { Redirect } from "react-router-dom";
-
 
 function Contact(props) {
   const [formData, setFormData] = useState({
-    name: '',
+    name: "",
     email: "",
-    message: ''
-  })
-  const history = useHistory()
+    message: "",
+  });
+  const history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,20 +17,17 @@ function Contact(props) {
       ...formData,
       [name]: value,
     });
-  }
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const created = await createMessage(formData);
+    await createMessage(formData);
 
     setFormData({ formData });
-    history.push('/message')
+    history.push("/");
   };
-  
-  
 
-  
   return (
-    <Layout user = {props.user}>
+    <Layout user={props.user}>
       <div className="contact-container">
         <div>
           <h1>Contact</h1>
@@ -41,19 +36,33 @@ function Contact(props) {
           <h1>Have Some Questions?</h1>
         </div>
         <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input name="name"type="text" onChange={handleChange} value={formData.name} />
-          <label htmlFor="email">Email</label>
-          <input name="email" type="text" onChange={handleChange} value={formData.email}/>
-          <label htmlFor="message">Message</label>
-          <input name= "message"type="text" onChange={handleChange} value={formData.message}/>
-        </div>
-        <button type="submit">Send</button>
+          <div>
+            <label htmlFor="name">Name</label>
+            <input
+              name="name"
+              type="text"
+              onChange={handleChange}
+              value={formData.name}
+            />
+            <label htmlFor="email">Email</label>
+            <input
+              name="email"
+              type="text"
+              onChange={handleChange}
+              value={formData.email}
+            />
+            <label htmlFor="message">Message</label>
+            <input
+              name="message"
+              type="text"
+              onChange={handleChange}
+              value={formData.message}
+            />
+          </div>
+          <button type="submit">Send</button>
         </form>
-        
       </div>
     </Layout>
   );
-  }
+}
 export default Contact;

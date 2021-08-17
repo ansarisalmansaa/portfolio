@@ -1,5 +1,4 @@
 import "./App.css";
-import Layout from "./screens/Layout/layout";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Route, useHistory } from "react-router";

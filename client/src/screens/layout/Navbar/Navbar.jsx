@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Route from "react-router-dom";
-import About from "../../AboutMe/About";
 import { useState, useEffect } from "react";
 import { verify } from "../../../services/user";
 import { logout } from "../../../services/user";
-import Contact from "../../Contact/Contact";
+
 import { useHistory } from "react-router-dom";
 
 function Navbar() {
   const [userExist, setUserExist] = useState(null);
-  const [user, setUser] = useState(null);
+  const [setUser] = useState(null);
   const history = useHistory();
   useEffect(() => {
     const checkSign = async () => {

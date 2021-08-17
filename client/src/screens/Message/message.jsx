@@ -1,7 +1,6 @@
 import {
   deleteMessage,
   getAllMessages,
-  getOneMessage,
 } from "../../services/contact";
 import { useState, useEffect } from "react";
 import Layout from "../Layout/layout";
@@ -17,7 +16,7 @@ function Message(user) {
   }, []);
   const handleDelete = async (id) => {
     const deleteM = await deleteMessage(id);
-    if (deleteM == "Deleted") {
+    if (deleteM === "Deleted") {
       setContacts((prevContacts) => {
         return prevContacts.filter((contact) => contact.id !== id);
       });
