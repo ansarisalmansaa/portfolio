@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getAllProjects } from "../../services/projects";
-import Layout from "../Layout/layout";
+import Layout from "../Layout/Layout";
 import { Link } from "react-router-dom";
 function Projects({ user }) {
   const [projects, setProjects] = useState([]);

@@ -3,7 +3,7 @@ import {
   getAllMessages,
 } from "../../services/contact";
 import { useState, useEffect } from "react";
-import Layout from "../Layout/layout";
+import Layout from "../Layout/Layout";
 
 function Message(user) {
   const [contacts, setContacts] = useState([]);

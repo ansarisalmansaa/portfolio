@@ -1,4 +1,4 @@
-import Layout from "../Layout/layout";
+import Layout from "../Layout/Layout";
 
 export default function Login({ handleLogin, loginForm, setLoginForm }) {
   const handleChange = (e) => {

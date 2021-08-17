@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { deleteProject, getOneProject } from "../../services/projects";
-import Layout from "../Layout/layout";
+import Layout from "../Layout/Layout";
 import { useHistory } from "react-router-dom";
 
 function Detail(props) {

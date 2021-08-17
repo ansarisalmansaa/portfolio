@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { addProject } from "../../services/projects";
-import Layout from "../Layout/layout";
+import Layout from "../Layout/Layout";
 
 export default function AddProject({ user }) {
   const [formData, setFormData] = useState({

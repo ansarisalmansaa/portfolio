@@ -1,4 +1,4 @@
-import Layout from "../Layout/layout";
+import Layout from "../Layout/Layout";
 import { useState } from "react";
 import { createMessage } from "../../services/contact";
 import { useHistory } from "react-router-dom";

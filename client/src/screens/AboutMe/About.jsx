@@ -11,7 +11,7 @@ import python from "./image/python.png";
 import wordpress from "./image/wordpress.png";
 import nodejs from "./image/nodejs.png";
 import git from "./image/git.png";
-import Layout from "../Layout/layout";
+import Layout from "../Layout/Layout";
 function About() {
   return (
     <Layout>
