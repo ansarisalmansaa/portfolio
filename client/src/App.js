@@ -13,6 +13,8 @@ import Message from "./screens/Message/Message";
 import Contact from "./screens/Contact/Contact";
 import AddProject from "./screens/AddProject/AddProject";
 import Detail from "./screens/DetailProject/Detail";
+import Edit from "./screens/EditProject/Edit";
+
 function App() {
   const [user, setUser] = useState(null);
   const [loginForm, setLoginForm] = useState({
@@ -35,7 +37,6 @@ function App() {
     reverify();
   }, []);
 
-  
   return (
     <div className="App">
       <Route exact path="/">
@@ -58,13 +59,16 @@ function App() {
         <About />
       </Route>
       <Route path="/contact">
-        <Contact/>
+        <Contact />
       </Route>
       <Route exact path="/add-project">
-        <AddProject user = {user} setUser={setUser}/>
+        <AddProject user={user} setUser={setUser} />
       </Route>
-      <Route exact path="/detail">
-        <Detail />
+      <Route path="/detail/:id">
+        <Detail user={user} />
+      </Route>
+      <Route path="/edit/:id">
+        <Edit user={user} />
       </Route>
     </div>
   );

@@ -5,31 +5,31 @@ import Layout from "../Layout/layout";
 
 export default function AddProject({ user }) {
   const [formData, setFormData] = useState({
-      user_id: user?.id,
-      project_name: "",
-      description: "",
-      image_url: "",
-      github_url: "",
-      deploy_url: ""
+    user_id: user?.id,
+    project_name: "",
+    description: "",
+    image_url: "",
+    github_url: "",
+    deploy_url: "",
   });
-console.log(formData)
+  console.log(formData);
   const history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData ({
-        ...formData,
-    [name]: value,
+    setFormData({
+      ...formData,
+      [name]: value,
       user_id: user?.id,
     });
-    console.log(formData)
+    console.log(formData);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-     await addProject(formData);
+    await addProject(formData);
     history.push(`/projects`);
-    console.log(formData)
+    console.log(formData);
   };
 
   return (

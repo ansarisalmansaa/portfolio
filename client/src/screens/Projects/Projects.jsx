@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getAllProjects } from "../../services/projects";
 import Layout from "../Layout/layout";
+import { Link } from "react-router-dom";
 function Projects({ user }) {
   const [projects, setProjects] = useState([]);
 
@@ -18,9 +19,15 @@ function Projects({ user }) {
         <h1>My Projects</h1>
         {projects.map((project) => (
           <div className="project-id" key={project.id}>
-            <div><h1>{project.project_name}</h1></div>
+            <div>
+              <h1>{project.project_name}</h1>
+            </div>
             <div className="project-img-container">
-              <img className="project-img" src={project.image_url} alt={project.name}/>
+              <img
+                className="project-img"
+                src={project.image_url}
+                alt={project.name}
+              />
             </div>
             <div>
               <a href={project.github_url}>View Code</a>
@@ -28,8 +35,8 @@ function Projects({ user }) {
             <div>
               <a href={project.deploy_url}>View Website</a>
             </div>
-            <a href="/detail">Detail</a>
-        </div>
+            <Link to={`/detail/${project.id}`}>Detail</Link>
+          </div>
         ))}
       </div>
     </Layout>
