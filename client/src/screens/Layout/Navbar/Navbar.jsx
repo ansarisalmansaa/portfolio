@@ -8,7 +8,6 @@ import { useHistory } from "react-router-dom";
 
 function Navbar() {
   const [userExist, setUserExist] = useState(null);
-  const [setUser] = useState(null);
   const history = useHistory();
   useEffect(() => {
     const checkSign = async () => {
@@ -19,7 +18,7 @@ function Navbar() {
   }, []);
   const handleLogout = () => {
     logout();
-    setUser(null);
+    setUserExist(null);
     history.push("/");
   };
   return (
