@@ -1,3 +1,7 @@
+.project-main{
+    /* margin-bottom: 400px; */
+    
+}
 #add-btn {
   margin-right: 80%;
   margin-top: 5%;
@@ -7,6 +11,8 @@
   flex-wrap: wrap;
   margin-left: 28%;
   margin-right: 20%;
+  padding-top: -400px;
+  
   /* flex-direction: row; */
 }
 #project-head {
@@ -32,3 +38,4 @@
 .projects-container img {
   width: 95%;
 }
+

@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap");
-nav{
-    font-weight: bolder;
-    width: 100%;
+nav {
+  font-weight: bolder;
+  width: 100%;
 }
 #nav-links {
   align-items: center;
 }
 #nav-links a {
-  margin: 2%;
+  margin: 1%;
 }
 #logo {
   color: white;

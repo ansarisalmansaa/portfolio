@@ -1,9 +1,7 @@
-import {
-  deleteMessage,
-  getAllMessages,
-} from "../../services/contact";
+import { deleteMessage, getAllMessages } from "../../services/contact";
 import { useState, useEffect } from "react";
 import Layout from "../Layout/Layout";
+import "./Message.css";
 
 function Message(user) {
   const [contacts, setContacts] = useState([]);
@@ -24,16 +22,20 @@ function Message(user) {
   };
   return (
     <Layout>
-      <div className="messages">
-        <h1>Message 💬</h1>
-        {contacts.map((contact) => (
-          <div key={contact.id}>
-            <div>{contact.name}</div>
-            <div>{contact.email}</div>
-            <div>{contact.message}</div>
-            <button onClick={() => handleDelete(contact.id)}>Delete</button>
-          </div>
-        ))}
+      <div className="message-main">
+        <div className="message-container">
+          <h1>Message 💬</h1>
+          {contacts.map((contact) => (
+            <div className="message-box">
+              <div key={contact.id}>
+                <div className="text-style">{contact.name}</div>
+                <div className="text-style">{contact.email}</div>
+                <div className="message-style">{contact.message}</div>
+                <button onClick={() => handleDelete(contact.id)}>Delete</button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </Layout>
   );

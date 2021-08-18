@@ -2,7 +2,7 @@ import Layout from "../Layout/Layout";
 import { useState } from "react";
 import { createMessage } from "../../services/contact";
 import { useHistory } from "react-router-dom";
-
+import "./Contact.css"
 function Contact(props) {
   const [formData, setFormData] = useState({
     name: "",
@@ -27,13 +27,14 @@ function Contact(props) {
   };
 
   return (
-    <Layout user={props.user}>
+    <Layout user={props.user} >
       <div className="contact-container">
+        <div className="form-container">
         <div>
           <h1>Contact</h1>
         </div>
         <div>
-          <h1>Have Some Questions?</h1>
+          <h2>Have Some Questions?</h2>
         </div>
         <form onSubmit={handleSubmit}>
           <div>
@@ -61,6 +62,7 @@ function Contact(props) {
           </div>
           <button type="submit">Send</button>
         </form>
+        </div>
       </div>
     </Layout>
   );

@@ -1,0 +1,33 @@
+.contact-container {
+  /* height: 82vh; */
+  width: 100vw;
+}
+.contact-container h1 {
+  color: #19c7ed;
+}
+.form-container {
+  border: 1px solid #19c7ed;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  margin-left: 20%;
+  width: 55%;
+  padding: 10px;
+}
+label {
+  color: white;
+}
+.contact-container button {
+  background: #001133;
+  border: 1px solid #19c7ed;
+  color: white;
+  width: 20%;
+  margin-bottom: 30px;
+  padding: 10px;
+}

@@ -16,7 +16,7 @@ function Projects({ user }) {
   }, []);
   return (
     <Layout>
-      <div>
+      <div className="project-main">
         <a id="add-btn" href="/add-project">
           <img src={addImage} alt="add-project" />
           Add
