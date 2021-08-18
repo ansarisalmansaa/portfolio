@@ -1,0 +1,19 @@
+.add-container {
+  border: 1px solid #19c7ed;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.add-form-button {
+  background: #001133;
+  border: 1px solid #19c7ed;
+  color: white;
+  width: 20%;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+@media screen and (device-width: 428px) {
+  .add-project {
+    height: 83vh;
+  }
+}

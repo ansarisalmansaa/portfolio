@@ -1,0 +1,45 @@
+.p-container h1 {
+  color: #19c7ed;
+}
+.project-box {
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+  flex-direction: row;
+  margin-left: 5%;
+}
+.img-container {
+  margin-left: 2%;
+  display: flex;
+}
+
+#detail-name-container {
+  display: flex;
+  border: 1px solid #19c7ed;
+  flex-direction: column;
+  margin: 7%;
+  border-radius: 7px;
+}
+#detail-name-container h2 {
+  color: #19c7ed;
+}
+#btn {
+  margin: 30px;
+  border: 1px solid #19c7ed;
+  border-radius: 3px;
+  padding: 5px;
+  width: 90px;
+}
+@media screen and (device-width: 428px) {
+  .project-box {
+    height: 73vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .p-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

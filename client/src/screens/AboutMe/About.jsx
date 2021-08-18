@@ -12,30 +12,32 @@ import wordpress from "./image/wordpress.png";
 import nodejs from "./image/nodejs.png";
 import git from "./image/git.png";
 import Layout from "../Layout/Layout";
+import "./About.css";
 function About() {
   return (
     <Layout>
       <div className="about-container">
-        <div>
+        <div className="about-box">
           <h1>About Me</h1>
           <p>My name is Salman Ansari and i am a Software Engineer</p>
         </div>
-        <div></div>
-        <h1>Skills</h1>
-        <div>
-          <img src={javascript} alt="java-img" />
-          <img src={html} alt="javascript-img" />
-          <img src={css} alt="" />
-          <img src={rails} alt="" />
-          <img src={swift} alt="" />
-          <img src={react} alt="" />
-          <img src={java} alt="" />
-          <img src={mongodb} alt="" />
-          <img src={android} alt="" />
-          <img src={python} alt="" />
-          <img src={wordpress} alt="" />
-          <img src={nodejs} alt="" />
-          <img src={git} alt="" />
+        <div className="skills-box">
+          <h1>Skills</h1>
+          <div>
+            <img src={javascript} alt="java-img" />
+            <img src={html} alt="javascript-img" />
+            <img src={css} alt="" />
+            <img src={rails} alt="" />
+            <img src={swift} alt="" />
+            <img src={react} alt="" />
+            <img src={java} alt="" />
+            <img src={mongodb} alt="" />
+            <img src={android} alt="" />
+            <img src={python} alt="" />
+            <img src={wordpress} alt="" />
+            <img src={nodejs} alt="" />
+            <img src={git} alt="" />
+          </div>
         </div>
       </div>
     </Layout>

@@ -2,7 +2,7 @@ import Layout from "../Layout/Layout";
 import { useState } from "react";
 import { createMessage } from "../../services/contact";
 import { useHistory } from "react-router-dom";
-import "./Contact.css"
+import "./Contact.css";
 function Contact(props) {
   const [formData, setFormData] = useState({
     name: "",
@@ -27,41 +27,41 @@ function Contact(props) {
   };
 
   return (
-    <Layout user={props.user} >
+    <Layout user={props.user}>
       <div className="contact-container">
         <div className="form-container">
-        <div>
-          <h1>Contact</h1>
-        </div>
-        <div>
-          <h2>Have Some Questions?</h2>
-        </div>
-        <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">Name</label>
-            <input
-              name="name"
-              type="text"
-              onChange={handleChange}
-              value={formData.name}
-            />
-            <label htmlFor="email">Email</label>
-            <input
-              name="email"
-              type="text"
-              onChange={handleChange}
-              value={formData.email}
-            />
-            <label htmlFor="message">Message</label>
-            <input
-              name="message"
-              type="text"
-              onChange={handleChange}
-              value={formData.message}
-            />
+            <h1>Contact</h1>
           </div>
-          <button type="submit">Send</button>
-        </form>
+          <div>
+            <h2>Have Some Questions?</h2>
+          </div>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">Name</label>
+              <input
+                name="name"
+                type="text"
+                onChange={handleChange}
+                value={formData.name}
+              />
+              <label htmlFor="email">Email</label>
+              <input
+                name="email"
+                type="text"
+                onChange={handleChange}
+                value={formData.email}
+              />
+              <label htmlFor="message">Message</label>
+              <input
+                name="message"
+                type="text"
+                onChange={handleChange}
+                value={formData.message}
+              />
+            </div>
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </Layout>

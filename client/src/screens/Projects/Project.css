@@ -1,7 +1,3 @@
-.project-main{
-    /* margin-bottom: 400px; */
-    
-}
 #add-btn {
   margin-right: 80%;
   margin-top: 5%;
@@ -12,17 +8,13 @@
   margin-left: 28%;
   margin-right: 20%;
   padding-top: -400px;
-  
-  /* flex-direction: row; */
 }
 #project-head {
   color: #19c7ed;
 }
 .project-c {
   border: solid #19c7ed;
-  /* width: 20%; */
   height: 10%;
-  /* min-width: 30px; */
   margin: 20px;
   background-color: white;
   border-radius: 4px;
@@ -38,4 +30,8 @@
 .projects-container img {
   width: 95%;
 }
-
+@media screen and (device-width: 428px) {
+  #add-btn {
+    width: 2px;
+  }
+}

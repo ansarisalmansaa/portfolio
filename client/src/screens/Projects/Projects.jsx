@@ -19,7 +19,6 @@ function Projects({ user }) {
       <div className="project-main">
         <a id="add-btn" href="/add-project">
           <img src={addImage} alt="add-project" />
-          Add
         </a>
       </div>
       <h1 id="project-head">My Projects</h1>

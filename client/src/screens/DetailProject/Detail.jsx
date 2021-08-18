@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { deleteProject, getOneProject } from "../../services/projects";
 import Layout from "../Layout/Layout";
 import { useHistory } from "react-router-dom";
-
+import "./Detail.css";
 function Detail(props) {
   const { user } = props;
 
@@ -24,33 +24,39 @@ function Detail(props) {
     history.push("/projects");
   };
   const logedInButton = (
-    <div>
-      <Link to={`/edit/${project.id}`}>Edit</Link>
-      <button onClick={(e) => handleDelete(e)}>Delete</button>
+    <div className="button-div">
+      <Link id="btn" to={`/edit/${project.id}`}>
+        Edit
+      </Link>
+      <button id="btn" onClick={(e) => handleDelete(e)}>
+        Delete
+      </button>
     </div>
   );
 
   return (
     <Layout>
-      <div className="projects-container">
+      <div className="p-container">
         <h1>Detail</h1>
 
-        <div className="project-id" key={project.id}>
-          <div className="project-img-container">
+        <div className="project-box" key={project.id}>
+          <div className="img-container">
             <img
               className="project-img"
               src={project.image_url}
               alt={project.name}
             />
           </div>
-          <div>
-            <h2>{project.project_name}</h2>
-          </div>
-          <div>
-            <p>{project.description}</p>
+          <div id="detail-name-container">
+            <div>
+              <h2>{project.project_name}</h2>
+            </div>
+            <div>
+              <p>{project.description}</p>
+            </div>
+            {user ? logedInButton : null}
           </div>
         </div>
-        {user ? logedInButton : null}
       </div>
     </Layout>
   );

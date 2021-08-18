@@ -1,8 +1,7 @@
 footer {
   display: flex;
   align-items: center;
-  margin-left: 37%;
-  margin-top: 10%;
+  margin-left: 42%;
 }
 #footer {
   color: white;
@@ -11,4 +10,18 @@ footer img {
   width: 30px;
   height: 30px;
   margin: 10px;
+}
+
+@media screen and (device-width: 428px) {
+  footer {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 5%;
+  }
+  footer img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
 }

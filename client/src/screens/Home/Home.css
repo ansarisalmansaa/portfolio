@@ -1,11 +1,18 @@
-.welcome-container{
-    min-width:90vw ;
-    min-height: 100vh;
-   margin-top: 10%;
-   overflow: hidden;
-   border: solid red;
+.welcome-container {
+  min-width: 90vw;
+  min-height: 80vh;
+  margin-top: 10%;
+  overflow: hidden;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-.welcome-container a{
-    border:1px solid #19C7ED;
-    border-radius: 3px;
+.welcome-container a {
+  border: 1px solid #19c7ed;
+  border-radius: 3px;
+  padding: 5px;
+}
+@media screen and (device-width: 428px) {
+  .welcome-container {
+    min-height: 81vh;
+  }
 }

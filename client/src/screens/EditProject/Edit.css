@@ -1,0 +1,28 @@
+.edit-container {
+  border: 1px solid #19c7ed;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 30%;
+  margin-bottom: 30%;
+}
+input {
+  border-radius: 5px;
+  text-decoration: none;
+}
+h1 {
+  color: #19c7ed;
+}
+#edit-btn {
+  background: #001133;
+  border: 1px solid #19c7ed;
+  color: white;
+  width: 20%;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+@media screen and (device-width: 428px) {
+  .edit-container {
+    margin-top: 10%;
+    height: 67vh;
+  }
+}

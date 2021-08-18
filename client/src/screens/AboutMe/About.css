@@ -1,0 +1,27 @@
+.about-container {
+  height: 90vh;
+}
+.about-container h1 {
+  color: #19c7ed;
+}
+.about-container img {
+  width: 70px;
+  margin-bottom: 5%;
+}
+.about-box {
+  border: 1px solid #19c7ed;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.skills-box {
+  border: 1px solid #19c7ed;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media screen and (device-width: 428px) {
+  .about-container {
+    height: 81vh;
+  }
+}
