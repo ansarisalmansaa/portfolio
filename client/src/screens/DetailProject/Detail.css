@@ -1,3 +1,4 @@
+
 .p-container h1 {
   color: #19c7ed;
 }
@@ -5,7 +6,7 @@
   margin-top: -20px;
   display: flex;
   align-items: center;
-  height: 70vh;
+  height: 80vh;
   flex-direction: row;
   margin-left: 5%;
 }

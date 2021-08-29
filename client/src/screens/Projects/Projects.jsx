@@ -14,12 +14,18 @@ function Projects({ user }) {
     };
     fetchProjects();
   }, []);
+  // const logedInButton = (
+  //   <a id="add-btn" href="/add-project">
+  //         <img src={addImage} alt="add-project" />
+  //       </a>
+  // );
   return (
     <Layout>
       <div className="project-main">
         <a id="add-btn" href="/add-project">
           <img src={addImage} alt="add-project" />
         </a>
+        {/* {user ? logedInButton : null} */}
       </div>
       <h1 id="project-head">My Projects</h1>
       <div className="projects-container">
@@ -41,7 +47,7 @@ function Projects({ user }) {
             <div>
               <a href={project.deploy_url}>View Website</a>
             </div>
-            <Link to={`/detail/${project.id}`}>Detail</Link>
+            <Link to={`/detail/${project.id}`}>Tech Stack</Link>
           </div>
         ))}
       </div>
