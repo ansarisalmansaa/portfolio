@@ -5,7 +5,7 @@ function Home() {
     <Layout>
       <div className="welcome-container">
         <h1>
-          Hi, I'm <span>Salman Ansari</span>
+          Hi, I'm <span id="name-span">Salman Ansari</span>
         </h1>
         <h2>I'm a Software Engineer / Full-Stack Developer</h2>
         <p>Front End Developer / Back End Developer / WordPress</p>
