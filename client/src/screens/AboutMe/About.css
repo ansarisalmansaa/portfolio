@@ -14,6 +14,12 @@
   margin-left: 10%;
   margin-right: 10%;
 }
+.about-box p{
+  margin: 25px;
+  font-weight:lighter;
+  font-size: 18px;
+
+}
 .skills-box {
   border: 1px solid #19c7ed;
   margin-top: 5%;

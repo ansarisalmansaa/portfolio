@@ -19,7 +19,14 @@ function About() {
       <div className="about-container">
         <div className="about-box">
           <h1>About Me</h1>
-          <p>My name is Salman Ansari and i am a Software Engineer</p>
+          <p>
+            Creative Software Engineer and Full Stack Developer with the
+            background of Computer Science. I have created multiple responsive
+            applications using JavaScript, ReactJs, Ruby and SQL. My two years
+            of experience in customer service makes me skilled to handle
+            client’s needs. I have the follow-through and team player attitude
+            that allow me to achieve my goals.
+          </p>
         </div>
         <div className="skills-box">
           <h1>Skills</h1>
