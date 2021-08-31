@@ -45,7 +45,9 @@ function Navbar() {
               <a href="/projects">Projects</a>
               <a href="/about">About</a>
               <a href="/contact">Contact</a>
-              <a href="/resume">Resume</a>
+              <a href="https://docs.google.com/document/d/1z1Lk5rO_AS-UQS_s3l8-mU5rhT7Pt7jL/edit?usp=sharing&ouid=115434653693469037059&rtpof=true&sd=true">
+                Resume
+              </a>
               <a href="/login">Login</a>{" "}
             </>
           )}
