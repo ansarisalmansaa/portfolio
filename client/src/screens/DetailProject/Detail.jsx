@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { deleteProject, getOneProject } from "../../services/projects";
 import Layout from "../Layout/Layout";
 import { useHistory } from "react-router-dom";
+
 import "./Detail.css";
 function Detail(props) {
   const { user } = props;
@@ -54,6 +55,7 @@ function Detail(props) {
             <div>
               <p>{project.description}</p>
             </div>
+
             {user ? logedInButton : null}
           </div>
         </div>

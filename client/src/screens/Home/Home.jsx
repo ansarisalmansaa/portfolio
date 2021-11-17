@@ -12,6 +12,13 @@ function Home() {
         <br />
         <br />
         <a href="/projects">View Projects</a>
+        <div class="ani-box">
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+          <div class="cube"></div>
+        </div>
       </div>
     </Layout>
   );
