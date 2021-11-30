@@ -1,4 +1,3 @@
-
 #add-btn {
   margin-right: 80%;
   margin-top: 5%;
@@ -9,6 +8,9 @@
   margin-left: 28%;
   margin-right: 20%;
   padding-top: -400px;
+}
+.layout-container {
+  height: 100vh;
 }
 #project-head {
   color: #19c7ed;
