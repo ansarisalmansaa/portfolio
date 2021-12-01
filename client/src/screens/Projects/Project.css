@@ -10,7 +10,7 @@
   padding-top: -400px;
 }
 .layout-container {
-  height: 100vh;
+  height: 110vh;
 }
 #project-head {
   color: #19c7ed;
@@ -21,6 +21,9 @@
   margin: 20px;
   background-color: white;
   border-radius: 4px;
+}
+.project-c:hover {
+  transform: scale(1.1);
 }
 .projects-container h2 {
   color: black;
@@ -33,6 +36,7 @@
 .projects-container img {
   width: 95%;
 }
+
 @media screen and (device-width: 428px) {
   #add-btn {
     width: 2px;
